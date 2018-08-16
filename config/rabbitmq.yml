@@ -6,4 +6,3 @@ spring:
     password: guest
     virtualHost: /
     publisherConfirms: true
-    publisherReturns: true
