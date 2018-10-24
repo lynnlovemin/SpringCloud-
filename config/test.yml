@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: test
+  cloud:
+    client:
+      ip-address:  127.0.0.1
+server:
+  port: 9999
+eureka:
+  instance:
+    hostname: 127.0.0.1
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://admin:admin123@localhost:8101/eureka/
