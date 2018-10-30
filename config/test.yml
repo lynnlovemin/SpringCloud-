@@ -16,7 +16,5 @@ eureka:
     fetch-registry: true
     healthcheck:
       enabled: true
-    serviceUrl:
-      defaultZone: http://admin:admin123@localhost:8101/eureka/
 data:
   message: {cipher}a997989c46cb365373dd11d502801918798f26ad9312808a8f4f352165b4f91f
