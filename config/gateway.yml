@@ -19,10 +19,8 @@ feign:
     enabled: true
 hystrix:
   command:
-    default:
+    fallbackcmd:
       execution:
-        timeout:
-          enabled: true
         isolation:
           thread:
             timeoutInMilliseconds: 30000
